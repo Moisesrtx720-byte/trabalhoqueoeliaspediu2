@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarberFlow - Dashboard</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="brand-icon">
+                ✂
+            </div>
+
+            <h2>
+                Barber<span>Flow</span>
+            </h2>
+
+        </div>
+
+
+        <nav class="sidebar-menu">
+
+            <a href="#" class="menu-item active">
+                <span>⌂</span>
+                Dashboard
+            </a>
+
+            <a href="#" class="menu-item">
+                <span>📅</span>
+                Agendamentos
+            </a>
+
+            <a href="#" class="menu-item">
+                <span>✂</span>
+                Serviços
+            </a>
+
+            <a href="#" class="menu-item">
+                <span>👤</span>
+                Meu perfil
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="#" class="menu-item">
+                <span>⚙</span>
+                Configurações
+            </a>
+
+            <a href="login.html" class="menu-item logout">
+                <span>↪</span>
+                Sair
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- CONTEÚDO -->
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+
+                <p class="welcome-small">
+                    Domingo, 13 de setembro
+                </p>
+
+                <h1>
+                    Olá, Moisés 👋
+                </h1>
+
+            </div>
+
+
+            <div class="user-profile">
+
+                <div class="avatar">
+                    M
+                </div>
+
+                <div class="user-info">
+
+                    <strong>
+                        Moisés Oliveira
+                    </strong>
+
+                    <span>
+                        Cliente
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- CARDS -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <div class="stat-icon blue">
+                    📅
+                </div>
+
+                <div>
+                    <span>Próximo corte</span>
+                    <strong>18/09/2026</strong>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon purple">
+                    ✂
+                </div>
+
+                <div>
+                    <span>Total de cortes</span>
+                    <strong>12</strong>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon green">
+                    ✓
+                </div>
+
+                <div>
+                    <span>Agendamentos</span>
+                    <strong>3</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- AGENDAMENTOS -->
+
+        <section class="section">
+            
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Meus agendamentos</h2>
+                    <p>Histórico dos seus horários.</p>
+                </div>
+
+                <button onclick="abrirModalAdd()" class="btn-primary">
+                    + Novo agendamento
+                </button>
+
+            </div>
+
+            <div id="container-agendamentos" class="appointments-list">
+            </div>
+
+            <div id="areaModal"></div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="app.js"></script>
+
+
+</body>
+</html>
