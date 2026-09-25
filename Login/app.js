@@ -2,7 +2,7 @@ const usuarios = [
   {
     id: 1,
     nome: "João Silva",
-    email: "123@",
+    email: "123@1",
     senha: "1234",
     idade: 28,
     cargo: "admin",
@@ -111,11 +111,6 @@ function autenticarCliente() {
         mensagemErroUsuario.innerText = "Usuário não encontrado"
         return
     }
-
-    if(usuarioEncontrado.cargo === "admin") {
-        window.location.href="../dashboardAdministrador/admin.html"
-        return
-    }
-
+    
     window.location.href="../dashboardCliente/dashboard.html"
 }
